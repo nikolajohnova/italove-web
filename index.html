@@ -22,6 +22,23 @@
       </span>
     </a>
 
+    <div class="header-contact" aria-label="Rychlý kontakt">
+      <a class="header-contact-line" href="tel:+420606848386" aria-label="Zavolat do ITAlove">
+        <svg class="header-contact-icon" aria-hidden="true" viewBox="0 0 24 24" fill="none">
+          <path d="M6.6 4.5l2.2-.6c.7-.2 1.4.2 1.6.9l.8 2.5c.2.6 0 1.2-.5 1.6l-1.3 1c.9 1.9 2.4 3.5 4.5 4.7l1.2-1.2c.4-.4 1-.5 1.5-.3l2.6 1c.7.3 1.1 1 .9 1.7l-.5 2.1c-.2.8-.9 1.3-1.7 1.3C10.6 19.2 4.8 13.4 4.8 6.1c0-.8.5-1.4 1.3-1.6z" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        <span>+420 606 848 386</span>
+      </a>
+      <a class="header-contact-line" href="https://www.google.com/maps/place//data=!4m2!3m1!1s0x4712950e6cbcda81:0x1af8e20e81426adf?sa=X&ved=1t:8290&ictx=111" target="_blank" rel="noopener" aria-label="Zobrazit adresu ITAlove">
+        <svg class="header-contact-icon" aria-hidden="true" viewBox="0 0 24 24" fill="none">
+          <path d="M4.5 11.2L12 5l7.5 6.2" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M6.8 10.4v8.1h10.4v-8.1" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M10 18.5v-4.6h4v4.6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        <span>Francouzská 33, Brno</span>
+      </a>
+    </div>
+
     <input class="nav-toggle" type="checkbox" id="nav-toggle" aria-label="Otevřít nebo zavřít menu" />
     <label class="nav-toggle-label" for="nav-toggle" aria-hidden="true">
       <span></span>
@@ -217,7 +234,7 @@
             <span>Víno a aperitivy</span>
             <span>Italská drogerie</span>
           </div>
-          <a class="text-link" href="https://www.google.com/maps/place//data=!4m2!3m1!1s0x4712950e6cbcda81:0x1af8e20e81426adf?sa=X&ved=1t:8290&ictx=111"> &#128205;Francouzská 33, 602 00 Brno-střed</a>
+          <a class="text-link" href="https://www.google.com/maps/place//data=!4m2!3m1!1s0x4712950e6cbcda81:0x1af8e20e81426adf?sa=X&ved=1t:8290&ictx=111"> &#128205;Francouzská 33, 602 00 Brno-střed-Zábrdovice</a>
         </div>
       </div>
     </section>
@@ -293,7 +310,7 @@
               <span class="contact-icon" aria-hidden="true">
                 <svg viewBox="0 0 24 24"><path d="M12 21s7-5.1 7-12a7 7 0 1 0-14 0c0 6.9 7 12 7 12Z"/><circle cx="12" cy="9" r="2.6"/></svg>
               </span>
-              <span><strong>Adresa:</strong> <a class="text-link inline-link" href="https://www.google.com/maps/place//data=!4m2!3m1!1s0x4712950e6cbcda81:0x1af8e20e81426adf?sa=X&ved=1t:8290&ictx=111">Francouzská 33, 602 00 Brno-střed</a></span>
+              <span><strong>Adresa:</strong> <a class="text-link inline-link" href="https://www.google.com/maps/place//data=!4m2!3m1!1s0x4712950e6cbcda81:0x1af8e20e81426adf?sa=X&ved=1t:8290&ictx=111">Francouzská 33, 602 00 Brno-střed-Zábrdovice</a></span>
             </p>
 
             <p class="contact-item">
@@ -340,7 +357,7 @@
             <select name="type">
               <option>Dárkový balíček</option>
               <option>Firemní balíčky ve větším množství</option>
-              <option>Italský obchod</option>
+              <option>Italský obchůdek</option>
               <option>Kavárna</option>
               <option>Dárkový poukaz</option>
             </select>
@@ -361,11 +378,11 @@
       <div class="footer-brand">
         <div class="footer-brand-head">
           <img class="footer-logo" src="img/italove_logo.jpg" alt="Italove logo" />
-          <p>Italský obchod, dárkové balíčky a kavárna.</p>
+          <p>Italský obchůdek, dárkové balíčky a kavárna.</p>
         </div>
         <div class="footer-contact">
           <strong>ITAlove - Italské produkty</strong>
-          <p>Francouzská 33, 602 00 Brno-střed</p>
+          <p>Francouzská 33, 602 00 Brno-střed-Zábrdovice</p>
           <p>+420 606 848 386</p>
           <p>info@italove.cz</p>
           <p>Instagram: @italove_brno</p>
@@ -386,5 +403,29 @@
       </div>
     </div>
   </footer>
+
+  <script>
+    const navToggle = document.getElementById('nav-toggle');
+    const internalLinks = document.querySelectorAll('a[href^="#"]');
+
+    internalLinks.forEach((link) => {
+      link.addEventListener('click', () => {
+        if (navToggle) navToggle.checked = false;
+
+        window.setTimeout(() => {
+          if (window.location.hash) {
+            history.replaceState(null, '', window.location.pathname + window.location.search);
+          }
+        }, 700);
+      });
+    });
+
+    window.addEventListener('load', () => {
+      if (window.location.hash) {
+        history.replaceState(null, '', window.location.pathname + window.location.search);
+        window.scrollTo({ top: 0, left: 0, behavior: 'auto' });
+      }
+    });
+  </script>
 </body>
 </html>
