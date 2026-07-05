@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ITAlove | Italské produkty</title>
+  <meta name="description" content="Italský obchůdek, dárkové balíčky na míru, firemní dárky a kavárna. Kousek Itálie pro domů, do firmy i na kávu." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="top-awning" aria-hidden="true"></div>
+
+  <header class="site-header">
+    <a class="brand" href="#top" aria-label="Italove domů">
+      <img class="brand-logo" src="img/italove_logo.jpg" alt="Italove logo" />
+      <span>
+        <strong>ITAlove</strong>
+        <small>italské produkty</small>
+      </span>
+    </a>
+
+    <input class="nav-toggle" type="checkbox" id="nav-toggle" aria-label="Otevřít nebo zavřít menu" />
+    <label class="nav-toggle-label" for="nav-toggle" aria-hidden="true">
+      <span></span>
+      <span></span>
+      <span></span>
+    </label>
+
+    <nav class="main-nav" aria-label="Hlavní navigace">
+      <a href="#balicky">Balíčky</a>
+      <a href="#obchudek">Obchod</a>
+      <a href="#kavarna">Kavárna</a>
+      <a href="#kontakt">Kontakt</a>
+      <a class="mobile-nav-cta" href="#kontakt">Kontaktovat</a>
+    </nav>
+
+    <a class="nav-cta" href="#kontakt">Kontaktovat</a>
+  </header>
+
+  <main id="top">
+    <section class="hero section-padding" aria-labelledby="hero-title">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow">Italský obchod · dárkové balíčky · kavárna</p>
+          <h1 id="hero-title">To nejlepší z Itálie na jednom místě.</h1>
+          <p class="hero-text">
+            Poctivě vybrané italské dobroty, dárkové balíčky na každou příležitost
+            a příjemné místo, kde se můžete zastavit pro dárek, běžný nákup nebo kávu.
+          </p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#balicky">Chci dárkový balíček</a>
+            <a class="button button-secondary" href="#obchudek">Navštívit obchod</a>
+          </div>
+          <div class="trust-row" aria-label="Hlavní výhody">
+            <span>Osobní domluva</span>
+            <span>Balíčky na míru</span>
+            <span>Brno a okolí</span>
+          </div>
+        </div>
+
+        <div class="hero-card" aria-label="Střídající se fotky Itálie">
+          <div class="hero-slider">
+            <div class="hero-slide slide-sea"></div>
+            <div class="hero-slide slide-city"></div>
+            <div class="hero-slide slide-street"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container hero-shortcuts" aria-label="Rychlé rozcestí">
+        <a class="shortcut-card" href="#balicky">
+          <span class="shortcut-label">01</span>
+          <h2>Dárkové balíčky</h2>
+          <p>Hotové inspirace i balíčky na míru pro firmy, klienty, rodinu nebo návštěvu.</p>
+          <strong>Vybrat balíček →</strong>
+        </a>
+        <a class="shortcut-card" href="#obchudek">
+          <span class="shortcut-label">02</span>
+          <h2>Italský obchod</h2>
+          <p>Delikatesy, víno, sladkosti, drogerie a dobroty, které si můžete vybrat osobně.</p>
+          <strong>Navštívit obchod →</strong>
+        </a>
+        <a class="shortcut-card" href="#kavarna">
+          <span class="shortcut-label">03</span>
+          <h2>Kavárna</h2>
+          <p>Zastavte se na kávu, něco malého dobrého a chvíli italské atmosféry.</p>
+          <strong>Dát si kávu →</strong>
+        </a>
+      </div>
+    </section>
+
+    <section id="balicky" class="packages section-padding">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">Dárkové balíčky</p>
+          <h2>Balíčky, které vypadají hezky a dávají smysl.</h2>
+          <p>
+            Pro osobní dárky, návštěvy, klienty i zaměstnance. Můžete vybrat hotovou inspiraci,
+            nebo si nechat připravit balíček podle rozpočtu, příležitosti a počtu kusů.
+          </p>
+        </div>
+
+        <div class="package-layout">
+          <article class="feature-card feature-card-large">
+            <span class="tag">priorita pro firmy</span>
+            <h3>Firemní poděkování bez vymýšlení.</h3>
+            <p>
+              Pro klienty, zaměstnance, obchodní partnery nebo jako poděkování za spolupráci.
+              Balíček může být jednoduchý, reprezentativní nebo výraznější podle toho,
+              jaký dojem má udělat.
+            </p>
+            <ul class="check-list">
+              <li>ručně připravené balíčky</li>
+              <li>možnost kartičky, etikety nebo firemní nálepky</li>
+              <li>varianty podle rozpočtu a počtu kusů</li>
+              <li>řešení i na poslední chvíli podle skladových zásob</li>
+            </ul>
+            <a class="button button-dark" href="#kontakt">Poptat firemní balíčky</a>
+          </article>
+
+          <div class="package-grid compact">
+            <article class="package-card">
+              <div class="package-photo olive"></div>
+              <div class="package-body">
+                <span class="tag">univerzální</span>
+                <h3>Italská klasika</h3>
+                <p>Těstoviny, pesto, olivový olej, sugo a drobnost ke kávě. Jistota, která potěší skoro každého.</p>
+              </div>
+            </article>
+
+            <article class="package-card">
+              <div class="package-photo red"></div>
+              <div class="package-body">
+                <span class="tag">sladké</span>
+                <h3>Sladká Itálie</h3>
+                <p>Káva, sušenky, čokolády, krémy a drobnosti pro radost.</p>
+              </div>
+            </article>
+
+            <article class="package-card">
+              <div class="package-photo dark"></div>
+              <div class="package-body">
+                <span class="tag">na večer</span>
+                <h3>Aperitivo doma</h3>
+                <p>Víno, olivy, slané dobroty a něco dobrého na příjemný večer.</p>
+              </div>
+            </article>
+
+            <article class="package-card package-card-custom">
+              <div class="custom-icon">+</div>
+              <div class="package-body">
+                <span class="tag tag-light">na míru</span>
+                <h3>Balíček podle vás</h3>
+                <p>Řeknete příležitost, rozpočet a komu je balíček určený. My navrhneme kombinaci.</p>
+                <a class="text-link light" href="#kontakt">Chci balíček na míru</a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="how section-padding-sm" id="jak-to-funguje">
+      <div class="container how-grid">
+        <div>
+          <p class="eyebrow">Jak nákup probíhá</p>
+          <h2>Stačí se ozvat. Zbytek domluvíme lidsky.</h2>
+          <p>
+            U balíčků je lepší osobní domluva než složitý e-shop. Každý rozpočet,
+            termín a příležitost může být jiná, proto se nejdřív pobavíme o tom,
+            co má balíček splnit.
+          </p>
+        </div>
+        <ol class="steps steps-modern">
+          <li>
+            <span>1</span>
+            <div>
+              <strong>Zavoláte nebo vyplníte formulář</strong>
+              <p>Napíšete počet kusů, přibližný rozpočet, termín a komu má být balíček určený.</p>
+            </div>
+          </li>
+          <li>
+            <span>2</span>
+            <div>
+              <strong>Navrhneme vhodnou variantu</strong>
+              <p>Vyberou se produkty, balení, případně kartička, etiketa nebo firemní prvek.</p>
+            </div>
+          </li>
+          <li>
+            <span>3</span>
+            <div>
+              <strong>Balíčky připravíme k předání</strong>
+              <p>Vyzvednutí na prodejně, osobní dovoz po domluvě (Jihomoravský kraj) nebo kurýr podle možností.</p>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <section id="obchudek" class="shop section-padding">
+      <div class="container split-grid align-center">
+        <div class="image-card shop-photo" aria-label="Ilustrační fotka obchůdku">
+        </div>
+        <div>
+          <p class="eyebrow">Italský obchod</p>
+          <h2>Italské dobroty, které si můžete vybrat osobně.</h2>
+          <p>
+            Můžete přijít pro běžný nákup,
+            vybrat něco dobrého domů nebo si nechat poradit s dárkem.
+          </p>
+          <div class="mini-grid">
+            <span>Těstoviny a omáčky</span>
+            <span>Sladkosti a káva</span>
+            <span>Víno a aperitivy</span>
+            <span>Italská drogerie</span>
+          </div>
+          <a class="text-link" href="https://www.google.com/maps/place//data=!4m2!3m1!1s0x4712950e6cbcda81:0x1af8e20e81426adf?sa=X&ved=1t:8290&ictx=111"> &#128205;Francouzská 33, 602 00 Brno-střed-Zábrdovice</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="kavarna" class="cafe section-padding">
+      <div class="container split-grid align-center reverse-mobile">
+        <div>
+          <p class="eyebrow">Kavárna</p>
+          <h2>Zastavte se na kávu a malou italskou chvíli.</h2>
+          <p>
+            Espresso, cappuccino nebo něco sladkého k tomu? Součástí obchůdku je i malá kavárna, kde si můžete na chvíli odpočinout, načerpat atmosféru Itálie a při tom objevit produkty, které pro Vás s láskou vybíráme.
+          </p>
+        </div>
+        <div class="image-card cafe-photo">
+        </div>
+      </div>
+    </section>
+
+    <section class="vouchers section-padding-sm" id="poukaz">
+      <div class="container voucher-card">
+        <div>
+          <p class="eyebrow">Dárkové poukazy</p>
+          <h2>Nevíte, co vybrat? Darujte poukaz.</h2>
+          <p>
+            Dárkový poukaz je jednoduchá varianta pro ty, kdo chtějí dát hezký dárek,
+            ale nechají výběr na obdarovaném. Hodí se i na poslední chvíli.
+          </p>
+        </div>
+        <a class="button button-primary" href="#kontakt">Zeptat se na poukaz</a>
+      </div>
+    </section>
+
+    <section id="faq" class="faq section-padding-sm">
+      <div class="container faq-grid">
+        <div>
+          <p class="eyebrow">FAQ</p>
+          <h2>Časté otázky</h2>
+        </div>
+        <div class="faq-list">
+          <details open>
+            <summary>Dají se balíčky upravit na míru?</summary>
+            <p>Ano. Balíček se může přizpůsobit rozpočtu, příležitosti, počtu kusů i tomu, jestli má být spíš sladký, slaný, elegantní nebo rodinný.</p>
+          </details>
+          <details>
+            <summary>Je možné připravit firemní balíčky ve větším množství?</summary>
+            <p>Ano. Pro firmy je vhodné napsat počet kusů, termín, rozpočet a případně požadavek na kartičku, etiketu nebo firemní nálepku.</p>
+          </details>
+          <details>
+            <summary>Doručujete balíčky?</summary>
+            <p>Podle domluvy. Počítáme hlavně s vyzvednutím v obchůdku, Brnem a Jihomoravským krajem, případně s kurýrem nebo osobním předáním.</p>
+          </details>
+          <details>
+            <summary>Jde udělat dárek na poslední chvíli?</summary>
+            <p>Podle skladových zásob ano. U urgentních dárků je nejlepší zavolat.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <section id="kontakt" class="contact section-padding">
+      <div class="container contact-grid">
+        <div>
+          <p class="eyebrow">Kontakt</p>
+          <h2>Napište, zavolejte nebo se zastavte.</h2>
+          <p>
+            Napište pár vět: co vás zajímá, pro koho balíček je, kolik kusů potřebujete,
+            jaký máte rozpočet a do kdy má být hotovo. Ozveme se s návrhem.
+          </p>
+          <div class="contact-box">
+            <p class="contact-title"><strong>ITAlove - Italské produkty</strong></p>
+
+            <p class="contact-item">
+              <span class="contact-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24"><path d="M12 21s7-5.1 7-12a7 7 0 1 0-14 0c0 6.9 7 12 7 12Z"/><circle cx="12" cy="9" r="2.6"/></svg>
+              </span>
+              <span><strong>Adresa:</strong> <a class="text-link inline-link" href="https://www.google.com/maps/place//data=!4m2!3m1!1s0x4712950e6cbcda81:0x1af8e20e81426adf?sa=X&ved=1t:8290&ictx=111">Francouzská 33, 602 00 Brno-střed-Zábrdovice</a></span>
+            </p>
+
+            <p class="contact-item">
+              <span class="contact-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24"><path d="M7.2 4.6 9 8.7l-2 1.4c1.1 2.4 2.9 4.2 5.2 5.2l1.4-2 4.1 1.8-.5 3.5c-.1.7-.7 1.2-1.4 1.2C9.6 19.8 4.2 14.4 4.2 8.2c0-.7.5-1.3 1.2-1.4l1.8-.2Z"/></svg>
+              </span>
+              <span><strong>Telefon:</strong> <a class="inline-link" href="tel:+420606848386">+420 606 848 386</a></span>
+            </p>
+
+            <p class="contact-item">
+              <span class="contact-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24"><path d="M4.5 7.5h15v10h-15z"/><path d="m5 8 7 5 7-5"/></svg>
+              </span>
+              <span><strong>E-mail:</strong> <a class="inline-link" href="mailto:info@italove.cz">info@italove.cz</a></span>
+            </p>
+
+            <p class="contact-item">
+              <span class="contact-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24"><rect x="5" y="5" width="14" height="14" rx="4"/><circle cx="12" cy="12" r="3.2"/><circle cx="16.6" cy="7.4" r=".8"/></svg>
+              </span>
+              <span><strong>Instagram:</strong> <a class="inline-link" href="https://www.instagram.com/italove_brno/">@italove_brno</a></span>
+            </p>
+
+            <p class="contact-item">
+              <span class="contact-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24"><path d="M14 8h2V5h-2.4C11.3 5 10 6.4 10 8.7V11H8v3h2v5h3.2v-5h2.4l.4-3h-2.8V8.8c0-.5.3-.8.8-.8Z"/></svg>
+              </span>
+              <span><strong>Facebook:</strong> <a class="inline-link" href="https://www.facebook.com/ITAloveBrno">ITAlove Brno</a></span>
+            </p>
+          </div>
+        </div>
+
+        <form class="form-card" action="#" method="post">
+          <label>
+            Jméno a firma
+            <input type="text" name="name" placeholder="Např. Jana Nováková, ABC s.r.o." />
+          </label>
+          <label>
+            E-mail nebo telefon
+            <input type="text" name="contact" placeholder="Kam se vám máme ozvat?" />
+          </label>
+          <label>
+            Co vás zajímá?
+            <select name="type">
+              <option>Dárkový balíček</option>
+              <option>Firemní balíčky ve větším množství</option>
+              <option>Italský obchůdek</option>
+              <option>Kavárna</option>
+              <option>Dárkový poukaz</option>
+            </select>
+          </label>
+          <label>
+            Zpráva
+            <textarea name="message" rows="5" placeholder="Počet kusů, rozpočet, termín, příležitost…"></textarea>
+          </label>
+          <button class="button button-primary" type="submit">Odeslat poptávku</button>
+          <p class="form-note">Prototyp: formulář zatím nikam neodesílá. Později se napojí na e-mail nebo formulářovou službu.</p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <div class="footer-brand-head">
+          <img class="footer-logo" src="img/italove_logo.jpg" alt="Italove logo" />
+          <p>Italský obchůdek, dárkové balíčky a kavárna.</p>
+        </div>
+        <div class="footer-contact">
+          <strong>ITAlove - Italské produkty</strong>
+          <p>Francouzská 33, 602 00 Brno-střed-Zábrdovice</p>
+          <p>+420 606 848 386</p>
+          <p>info@italove.cz</p>
+          <p>Instagram: @italove_brno</p>
+          <p>Facebook: ITAlove Brno</p>
+        </div>
+      </div>
+      <div>
+        <span>Navigace</span>
+        <a href="#balicky">Balíčky</a>
+        <a href="#obchudek">Obchod</a>
+        <a href="#kavarna">Kavárna</a>
+        <a href="#kontakt">Kontakt</a>
+      </div>
+      <div>
+        <span>Praktické</span>
+        <a href="#poukaz">Dárkový poukaz</a>
+        <a href="#faq">FAQ</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
