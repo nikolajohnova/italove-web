@@ -1054,7 +1054,6 @@ select {
 @media (max-width: 860px) {
   .top-awning {
     height: 14px;
-    background-size: 28px 14px;
   }
 
   .site-header {
